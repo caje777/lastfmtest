@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const apiKey = '37cfe9ae4d8face9927cd7f9b4b26f56'; // Replace with your Last.fm API key
-    const user = 'k-dino';  // Replace with your Last.fm username
+    const user = 'caje7';  // Replace with your Last.fm username
 
     const fetchData = async (endpoint) => {
         try {
