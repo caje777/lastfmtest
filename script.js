@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const displayMonthlyData = async () => {
-        const data = await fetchData('user.gettoptracks&limit=10'); // Example endpoint
+        const data = await fetchData('user.gettoptracks&limit=10'); // Example endpoint for top tracks
         if (data && data.toptracks) {
             const tracks = data.toptracks.track.map(track => `<li>${track.name} by ${track.artist.name}</li>`).join('');
             document.getElementById('monthly-data').innerHTML = `<ul>${tracks}</ul>`;
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const displayYearlyData = async () => {
-        const data = await fetchData('user.gettoptracks&limit=10'); // Replace with yearly endpoint if available
+        const data = await fetchData('user.gettoptracks&limit=10'); // Replace with endpoint for yearly data if needed
         if (data && data.toptracks) {
             const tracks = data.toptracks.track.map(track => `<li>${track.name} by ${track.artist.name}</li>`).join('');
             document.getElementById('yearly-data').innerHTML = `<ul>${tracks}</ul>`;
